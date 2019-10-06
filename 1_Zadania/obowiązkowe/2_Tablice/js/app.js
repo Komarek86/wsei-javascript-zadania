@@ -1,14 +1,6 @@
-function distFromAverage(inputArray) {
-    var sum=0;
-    for(var i=0; i<inputArray.length; i++) {
-       sum+= inputArray[i];
-    }
-    var average = suma/inputArray.length;
-    var newArray = [];
-    for(var i=0; i<inputArray; i++) {
-        newArray.push(inputArray[i]-average);
-    }
-    return newArray;
+var array=["gruszka","japko","sliwka","morela"];
+console.log(array[0]);
+console.log(array[array.length-1]);
+for(var i=0; i<array.length; i++) {
+    console.log(array[i]);
 }
-
-distFromAverage ([1,2,3,4,5,6,7]);
