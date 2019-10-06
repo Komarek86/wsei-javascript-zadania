@@ -70,3 +70,11 @@ function getEvenAvarage(array)
 }
 
 console.log(getEvenAvarage([1,2,3,4,5,6,7]));
+
+//ZADANIE 6
+
+function sortArray(array)
+{
+
+}
+sortArray([145,11,3,64,4,6,10])
