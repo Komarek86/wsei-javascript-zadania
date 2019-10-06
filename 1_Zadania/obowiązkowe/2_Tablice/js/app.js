@@ -22,3 +22,20 @@ function multiply(array) {
 }
 
 multiply([1,2,3,4,5,6,7]);
+//--------------------
+function getEvenAverage(array) {
+    var sum = 0;
+    var counter = 0;
+
+    array.forEach(element => {
+        if(element % 2 ===0) {
+            sum = sum + element;
+            counter++;
+        }
+    });
+    
+    if(counter===0) return null;
+    return sum/counter;
+}
+
+console.log(getEvenAverage([1,2,3,4,5,6,7]));
