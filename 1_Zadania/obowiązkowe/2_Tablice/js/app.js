@@ -75,6 +75,8 @@ console.log(getEvenAvarage([1,2,3,4,5,6,7]));
 
 function sortArray(array)
 {
-
+    array.sort((a,b) => a - b);
+    return array;
 }
 sortArray([145,11,3,64,4,6,10])
+
