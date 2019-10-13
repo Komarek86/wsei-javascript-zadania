@@ -30,8 +30,24 @@ var arr = [
     ];
 
 // ZADANIE 1
+//1.1
+console.log(task1Array[3][2]);
+//1.2
+
+//1.3
+console.log(task1Array[4][2]);
 
 // ZADANIE 2
+//2.1
+task2Array.forEach(element => console.log(element));
+//2.2
+task2Array.forEach(element => console.log(element.length));
+//2.3
+for(var i = 0; i < task2Array.length; i++) {
+    for(var j = 0; j < task2Array[i].length; j++) {
+         console.log(task2Array[i][j]);
+    }
+}
 
 // ZADANIE 3
 
