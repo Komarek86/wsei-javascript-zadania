@@ -80,3 +80,24 @@ function sortArray(array)
 }
 sortArray([145,11,3,64,4,6,10])
 
+//ZADANIE 7
+
+function addArrays(firstArray, secondArray) {
+	var count = Math.max(firstArray.length, secondArray.length);
+	var finalArray = [];
+	
+	for(var i = 0; i < count; i++) {
+		if(firstArray[i] === undefined) {
+			firstArray[i] = 0;
+		}
+		if(secondArray[i] === undefined) {
+			secondArray[i] = 0;
+		}
+		
+		finalArray[i] = firstArray[i] + secondArray[i];
+	}
+	console.log(finalArray);
+}
+addArrays([4,0,1,3,4], [1,9,6,7,8,17]);
+addArrays([8,3,22], [1,3,2]);
+addArrays([2,3,1,5,3,5], [3,1,76,1]);
