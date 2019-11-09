@@ -5,21 +5,21 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//FUNKCJA DO SORTOWANIA TABLICY
 function sortArray() {
 
-    //Twoj komentarz ...
+    //PRZYPISANIE WARTOSCI DO TABLICY
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //SORTOWANIE OD NAJMNIEJSZEJ DO NAJWIEKSZEJ
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        //POROWNANIE DWOCH ELEM. TABLICY - MNIEJSZY STAWIA PO LEWEJ, WIEKSZY PO PRAWEJ
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //ZWROCENIE POSORTOWANEJ TABLICY
     return points;
 }
 
-//Twoj komentarz ...
+//WYWOLANIE FUNKCJI SORTUJACEJ TABLICE
 sortArray();
