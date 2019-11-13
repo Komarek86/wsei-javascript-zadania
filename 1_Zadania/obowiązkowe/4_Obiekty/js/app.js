@@ -62,4 +62,5 @@ var spoon = {
 var fork = spoon;
 fork.isExist  = false;
 
+console.log(spoon.isExist);
 //NIE ISTNIEJE
