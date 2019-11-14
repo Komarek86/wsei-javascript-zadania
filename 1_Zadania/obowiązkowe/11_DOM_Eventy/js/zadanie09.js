@@ -26,3 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 })
+
+    //innerFuncOne(this);
+    //W METODZIE ODBIERANIE ELEMENTU
