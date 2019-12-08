@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (i === 0 || i % 2 === 0) {
             ex5[i].style.backgroundColor = 'green';
         }
-        if (i === 0 || i % 3 === 0) {
+        if (i % 3 === 0) {
             ex5[i].style.textDecoration = 'underline';
         }
-        if (i === 4) {
+        if (i%5 === 0) {
             ex5[i].classList.add('big');
         }
     }
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for(var item of browsers){
         var name = item.className;
         item.style.backgroundImage = `url(assets/img/${name}.png)`;
-        item.parentNode.querySelector('a').href = `www.${name}.pl`;
+        item.parentNode.querySelector('a').href = `http://www.${name}.pl`;
         item.parentNode.querySelector('a').innerText = name;
     } 
     document.querySelector('.chrome').style.width='100px';
