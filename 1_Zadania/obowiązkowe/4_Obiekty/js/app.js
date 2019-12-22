@@ -1,3 +1,46 @@
+//ZAD 0a
+
+const city = {
+    capital:'Warsaw',
+    population:1708000,
+    president:'Duda',
+    primeMinisters:['Jerzy Kwieciński','Marlena Maląg']
+}
+
+console.log(city.capital,city.population,city.president,city.primeMinisters);
+
+//ZAD 0b
+const timeMachine = {
+    shape:'koło',
+    model:'model',
+    run: function(date,place) {
+        console.log(`${date}: we are in ${place}`);
+    }
+}
+
+console.log(`shape: ${timeMachine.shape}`);
+console.log(`model: ${timeMachine.model}`);
+timeMachine.run('2077-10-23', 'Boston');
+
+//ZAD 1
+
+const book = {
+    title: '1984',
+    author: 'George Orwell',
+    numberOfPages: 288,
+}
+console.log(book.title,book.author,book.numberOfPages);
+
+//ZAD 2
+
+const person = {
+    name: 'Borys',
+    age: 23,
+    sayHello: () => console.log('Hello')
+}
+console.log(person.name,person.age);
+person.sayHello();
+
 //ZAD 3
 
 const recipe = {
@@ -11,73 +54,6 @@ recipe.ingredients = [
 ];
 console.log(recipe.title,recipe.servings,recipe.ingredients);
 
-//zad 4
-
-var movie = {
-    director: "Peter Jackson",
-    writers: [" J.R.R. Tolkien ", "Fran Walsh", "Philippa Boyens", "Peter Jackson"],
-    stars: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
-    country: "New Zealand | USA",
-    budget: "$93,000,000",
-    imdbPoints: 8.8,
-    year: 2001,
-    time: "2h 58 min",
-    category: " Adventure, Drama, Fantasy"
-}
-for(var x in movie) {
-    if (movie.hasOwnProperty(x)) {
-        var element = movie[x];
-        console.log(element);
-    }
-}
-
-//zad 5
-
-var animals = [
-    {
-        type: "cat",
-        breed: "persian",
-        name: "Tiberius",
-        health: [
-            {
-                date: "2012-03-03",
-                visitType: "grafting"
-            },
-            {
-                date: "2015-06-23",
-                visitType: "bowel surgery"
-            }
-        ]
-    },
-    {
-        type: "Guinea pig",
-        breed: "The Rex",
-        name: "Marko",
-        health: [
-            {
-                date: "2015-12-04",
-                visitType: "grafting"
-            },
-            {
-                date: "2016-03-15",
-                visitType: "ear cleaning"
-            }
-        ]
-    }
-
-]
-for(var i=0; i<animals.length;i++)
-{
-    for(var x in animals[i]) {
-    if (animals[i].hasOwnProperty(x)) {
-        var element = animals[i][x];
-        console.log(element);
-    }
-}
-}
-
-//zad 6
-
 //ZAD 6
 var spoon = {
     isExist: true
@@ -85,3 +61,6 @@ var spoon = {
 
 var fork = spoon;
 fork.isExist  = false;
+
+console.log(spoon.isExist);
+//NIE ISTNIEJE
