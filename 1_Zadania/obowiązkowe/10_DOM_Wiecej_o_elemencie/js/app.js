@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var color = document.querySelector('.ex2 li #fav_color');
     var meal = document.querySelector('.ex2 li #fav_meal');
 
-    name.innerHTML = 'Agnieszka Krupińska';
+    name.innerHTML = 'Agnieszko Krupińska, bubie Cie';
     color.innerHTML = 'Niebieski';
     meal.innerHTML = 'Spaghetti';
 
