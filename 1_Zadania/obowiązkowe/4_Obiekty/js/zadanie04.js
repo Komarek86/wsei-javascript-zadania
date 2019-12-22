@@ -9,3 +9,9 @@ var movie = {
     time: "2h 58 min",
     category: " Adventure, Drama, Fantasy"
 }
+for(var x in movie) {
+    if (movie.hasOwnProperty(x)) {
+        var element = movie[x];
+        console.log(element);
+    }
+}
