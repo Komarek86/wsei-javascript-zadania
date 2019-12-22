@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//FUNKCJA ZEWN.
 function jeden() {
 
-    //Twoj komentarz ...
+    //ZMIENNA LOKALNA WE FUKNCJI JEDEN
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //FUNCKA WEWN.
     function dwa() {
 
-        //Twoj komentarz ...
+        //WYPISANIE W KONSOLI zmienna1 - ZADZIALA BO FUNKCJA WEWN. MA DOSTEP DO FUNKCJI ZEWN.
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //STWORZENIE I PRZYPISANIE WARTOSCI DO zmienna2 - FUNKCJA ZEWN. NIE MA DO NIEJ DOSTEPU
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //WYWOLANIE FUNKCJI WEWN. Z ZEWN.
     dwa();
 
-    //Twoj komentarz ...
+    //WYPISANIE W KONSOLI zmienna2 - NIE ZADZIALA - ZMIENNA JEST POZA FUNKCJA 
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//WYWOLANIE FUNKCJI ZEWN. I WEWN. - FUNKCJA ZEWN. WYWOLUJE FUNKCJE WEWN.
 jeden()
