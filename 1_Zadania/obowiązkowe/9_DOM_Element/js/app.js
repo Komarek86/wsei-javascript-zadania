@@ -17,20 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
        return array;
    }
 
-   //console.log(getDatasInfo(links));
 
    //ZAD 1
    console.log(homeElement);
-   console.log(childElements); //tu
    console.log(banner);
-   console.log(blocks); //tu też
-   console.log(links); // i tu
 
    for(let i = 0; i < childElements.length; i++) {console.log(childElements[i].tagName, childElements[i].classList);}
 
-   for(let i = 0; i < blocks.length; i++) {console.log(blocks[i].innerHTML);}
+   for(let i = 0; i < blocks.length; i++) {console.log(blocks[i].tagName, blocks[i].classList);}
 
-   for(let i = 0; i < links.length; i++) {console.log(links[i]);}
+   for(let i = 0; i < links.length; i++) {console.log(links[i].tagName, links[i].classList);}
 
    //ZAD 2
    for(let item of blocks){
@@ -60,6 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       return tags;
    }
+   getTags(childElements);
+
    //ZAD 5
    function getClassInfo(element){
         return element.classList;
@@ -75,4 +73,5 @@ document.addEventListener("DOMContentLoaded", function () {
            }
        }
    }
+   setDataDirection(liElements);
 });
